@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/cbc296ae57.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./fullpage.js" defer></script>
+    <script src="./design_slide.js" defer></script>
+  </head>
+  <body ondragstart="return false">
+    <div id="wrap">
+      <div id="content_nav_wrap">
+        <div id="content_nav">
+          <h1>
+            <a href="./index.html"
+              ><img src="./img/small_logo.png" alt="" />AVANTE</a
+            >
+          </h1>
+          <ul>
+            <li><a href="">모델소개</a></li>
+            <li><a href="">제원</a></li>
+            <li><a href="">가격</a></li>
+            <li><a href="">갤러리</a></li>
+            <li><a href="">구매후기</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">내차만들기</a></li>
+            <li><a href="#">구매상담신청</a></li>
+            <li><a href="#">시승 신청</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <input type="checkbox" id="popup_menu_check" />
+      <div id="popup_menu_bg"></div>
+      <div id="bottom_menu">
+        <ul id="popup_menu_list">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <label for="popup_menu_check" id="popup_menu_btn">
+          <div></div>
+          <div></div>
+        </label>
+        <div id="top_btn">TOP</div>
+      </div>
+
+      <header>
+        <div id="personal_menu">
+          <ul>
+            <li><a href="#">개인로그인</a></li>
+            <li><a href="#">법인로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">월드와이드</a></li>
+            <li><a href="#">language</a></li>
+            <li><a href="#">채용</a></li>
+            <li><a href="#">검색</a></li>
+          </ul>
+        </div>
+        <nav>
+          <div>
+            <p1
+              ><a href="#"><img src="./img/logo.webp" alt="" /></a
+            ></p1>
+          </div>
+          <ul id="product_menu">
+            <li><a href="#">모델</a></li>
+            <li><a href="#">멤버십&차량관리</a></li>
+            <li><a href="#">이벤트</a></li>
+            <li><a href="#">고객지원</a></li>
+            <li><a href="#">브랜드</a></li>
+            <li><a href="#">회사소개</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div id="visual_wrap">
+        <div id="visual">
+          <div id="visual_top_menu">
+            <ul>
+              <li><a href="">홈</a></li>
+              <li><a href="">모델</a></li>
+              <li><a href="">모델정보</a></li>
+              <li><a href="">승용</a></li>
+              <li><a href="">Avante</a></li>
+            </ul>
+          </div>
+          <div id="visual_img">
+            <div id="visual_content">
+              <div id="visual_content_left">
+                <h1>AVANTE</h1>
+                <span>세상, 달라졌다.</span>
+                <span>16,700,000 부터</span>
+              </div>
+              <div id="visual_content_right">
+                <button>카탈로그 다운로드</button>
+                <button>가격표 다운로드</button>
+                <a href="#"><i class="fas fa-heart"></i></a>
+              </div>
+            </div>
+          </div>
+          <div id="visual_nav">
+            <ul id="visual_nav_left">
+              <li><a href="">모델소개</a></li>
+              <li><a href="">제원</a></li>
+              <li><a href="">가격</a></li>
+              <li><a href="">갤러리</a></li>
+              <li><a href="">구매후기</a></li>
+            </ul>
+            <ul id="visual_nav_right">
+              <li><a href="">내차만들기</a></li>
+              <li><a href="">구매상담신청</a></li>
+              <li><a href="">시승 신청</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div id="content_side_nav_wrap" class="">
+        <ul>
+          <li class="side_menu_list" onclick="selectContent(0)">
+            <div class=""></div>
+            <span>Highlight</span>
+          </li>
+          <li class="side_menu_list" onclick="selectContent(1)">
+            <div></div>
+            <span>Design</span>
+          </li>
+          <li class="side_menu_list" onclick="selectContent(2)">
+            <div></div>
+            <span>Space</span>
+          </li>
+          <li class="side_menu_list" onclick="selectContent(3)">
+            <div></div>
+            <span>Convenience</span>
+          </li>
+          <li class="side_menu_list" onclick="selectContent(4)">
+            <div></div>
+            <span>Driving</span>
+          </li>
+        </ul>
+      </div>
+      <div class="content hilight">
+        <div class="hilight_content">
+          <div class="hilight_content_top">
+            <div class="hilight_text">
+              <h1>Highlights</h1>
+              <h2>세상, 달라졌다.</h2>
+              <span>달라진 세상의 모습과 기준만큼</span>
+              <span>새로운 아반떼도 세상 달라졌습니다.</span>
+            </div>
+            <div class="hilight_top_center">
+              <div></div>
+              <div></div>
+            </div>
+            <div></div>
+          </div>
+          <div class="hilight_content_under">
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="content design content_form1">
+        <div class="content_img_wrap">
+          <div class="content_img_view design_img_view">
+            <img
+              src="./img/design_bg_img/design_img_01.webp"
+              alt=""
+              class="content_bg_img"
+            />
+            <img src="./img/design_bg_img/design_bg_img_02.webp" alt="" />
+          </div>
+          <div class="content_select_menu">
+            <input
+              type="radio"
+              id="front_box"
+              name="img_select"
+              class="content_select_menu1"
+              checked
+            />
+            <label for="front_box" class="design_label">Front</label>
+            <input
+              type="radio"
+              id="rear_box"
+              name="img_select"
+              class="content_select_menu2"
+            />
+            <label for="rear_box" class="design_label">Rear</label>
+          </div>
+        </div>
+        <div class="content_info">
+          <div class="content_info_txt_box">
+            <h1>Design</h1>
+            <span
+              >'파라메트릭 다이나믹스'가 적용된 아반떼는 '센슈어스 스포티니스'
+              디자인 아이덴티티를 더욱 감성적이고 스포티하게 구현합니다.</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="content space content_form1">
+        <div class="content_img_wrap">
+          <div class="content_img_view space_img_view">
+            <img
+              src="./img/space_bg_img/space_bg_img_01.webp"
+              alt=""
+              class="content_bg_img space_bg_img"
+            />
+            <img src="./img/space_bg_img/space_bg_img_02.webp" alt="" />
+          </div>
+          <div class="content_select_menu">
+            <input
+              type="radio"
+              id="space_front_box"
+              name="space_img_select"
+              class="content_select_menu1"
+              checked
+            />
+            <label for="space_front_box" class="space_label">Front</label>
+            <input
+              type="radio"
+              id="space_rear_box"
+              name="space_img_select"
+              class="content_select_menu2"
+            />
+            <label for="space_rear_box" class="space_label">Rear</label>
+          </div>
+        </div>
+        <div class="content_info">
+          <div class="content_info_txt_box">
+            <h1>Space</h1>
+            <span
+              >운전자를 감싸는 비행기 조종석 형태의 인테리어로 몰입감 있는
+              드라이빙 경험을 선사합니다.</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="content convenience content_form2">
+        <div class="img_txt_wrap">
+          <div class="convenience_img_view">
+            <div class="img_wrap convenience_img_wrap">
+              <img
+                src="./img/convenience_bg_img/convenience_bg_img_01.jpg"
+                alt=""
+                class="convenience_img"
+              />
+              <img
+                src="./img/convenience_bg_img/convenience_bg_img_02.jpg"
+                alt=""
+              />
+              <img
+                src="./img/convenience_bg_img/convenience_bg_img_03.jpg"
+                alt=""
+              />
+              <img
+                src="./img/convenience_bg_img/convenience_bg_img_04.jpg"
+                alt=""
+              />
+              <img
+                src="./img/convenience_bg_img/convenience_bg_img_05.jpg"
+                alt=""
+              />
+              <img
+                src="./img/convenience_bg_img/convenience_bg_img_06.jpg"
+                alt=""
+              />
+              <img
+                src="./img/convenience_bg_img/convenience_bg_img_07.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <ul class="txt_wrap">
+            <input
+              type="radio"
+              name="convenience_radio"
+              id="convenience_radio_01"
+              checked
+            />
+            <li>
+              <label for="convenience_radio_01">
+                <p3 class="convenience_label">현대 카페이</p3>
+              </label>
+              <span
+                >네비게이션 화면을 통해 제휴된 가맹점에서 현금이나 실물 카드
+                없이 전용앱에 등록한 카드로 차량한에서 간편하게 결제할 수 있어
+                운전자의 일상에 편의를 더했습니다.</span
+              >
+            </li>
+            <input
+              type="radio"
+              name="convenience_radio"
+              id="convenience_radio_02"
+            />
+            <li>
+              <label for="convenience_radio_02">
+                <p3 class="convenience_label">10.25인치 풀 컬러 클러스터</p3>
+              </label>
+              <span
+                >10.25인치 고해상도 TFT LCD를 적용하여 시인성을 향상시키고,
+                대화면 클러스터를 통해 차량 및 주행정보를 차별화된 컨텐츠로
+                제공합니다. * 인포테인먼트 시스템 화면 이미지는 정기 업데이트에
+                따라 변동될 수 있습니다.</span
+              >
+            </li>
+            <input
+              type="radio"
+              name="convenience_radio"
+              id="convenience_radio_03"
+            />
+            <li>
+              <label for="convenience_radio_03">
+                <p3 class="convenience_label">음성인식 차량제어</p3>
+              </label>
+              <span
+                >스티어링 휠에 위치한 음성 인식 버튼을 통해 필요한 정보 안내는
+                물론, 공조/열선 등 차량의 다양한 기능을 제어할 수 있습니다. *
+                블루링크 가입 후 이용하실 수 있습니다.</span
+              >
+            </li>
+            <input
+              type="radio"
+              name="convenience_radio"
+              id="convenience_radio_04"
+            />
+            <li>
+              <label for="convenience_radio_04">
+                <p3 class="convenience_label">개인화 프로필</p3>
+              </label>
+              <span
+                >인포테인먼트 시스템 화면 내 사용자 선택을 하거나 디지털 키로
+                문을 여는 순간 차가 유저를 인식하여 시트포지션, 인포테인먼트
+                시스템 설정값과 공조 등 운전 환경이 유저 프로필에 맞게 자동으로
+                설정됩니다. * 개인화 프로필 기능 활용을 위해 사전에 차량과
+                디지털 키 (스마트폰) 연동 설정이 필요합니다. * 인포테인먼트
+                시스템 화면 이미지는 정기 업데이트에 따라 변동될 수 있습니다.
+              </span>
+            </li>
+            <input
+              type="radio"
+              name="convenience_radio"
+              id="convenience_radio_05"
+            />
+            <li>
+              <label for="convenience_radio_05">
+                <p3 class="convenience_label">공기 청정 시스템</p3>
+              </label>
+              <span
+                >미세먼지 센서를 통해 차량 내부의 공기질을 실시간으로
+                모니터링하며 자동 공기 정화 기능을 작동하여 쾌적한 실내 환경을
+                제공합니다.</span
+              >
+            </li>
+            <input
+              type="radio"
+              name="convenience_radio"
+              id="convenience_radio_06"
+            />
+            <li>
+              <label for="convenience_radio_06">
+                <p3 class="convenience_label">운전석 10WAY 전동시트</p3>
+              </label>
+              <span>* 럼버서포트 포함</span>
+            </li>
+            <input
+              type="radio"
+              name="convenience_radio"
+              id="convenience_radio_07"
+            />
+            <li>
+              <label for="convenience_radio_07">
+                <p3 class="convenience_label">운전석 자세 메모리시스템</p3>
+              </label>
+              <span></span>
+            </li>
+          </ul>
+        </div>
+        <div class="content_info">
+          <div class="content_info_txt_box">
+            <h1>Convenience</h1>
+            <span
+              >가장 진보적인 첨단 사양들이 운전자와 교감하여 능동적인 경험을
+              제공합니다.</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="content dirving content_form2">
+        <div class="img_txt_wrap">
+          <div class="driving_img_view">
+            <div class="img_wrap driving_img_wrap">
+              <img
+                src="./img/driving_bg_img/driving_bg_img_01.jpg"
+                alt=""
+                class="driving_img"
+              />
+              <img src="./img/driving_bg_img/driving_bg_img_02.jpg" alt="" />
+              <img src="./img/driving_bg_img/driving_bg_img_03.jpg" alt="" />
+              <img src="./img/driving_bg_img/driving_bg_img_04.jpg" alt="" />
+              <img src="./img/driving_bg_img/driving_bg_img_05.jpg" alt="" />
+              <img src="./img/driving_bg_img/driving_bg_img_06.jpg" alt="" />
+              <img src="./img/driving_bg_img/driving_bg_img_07.jpg" alt="" />
+            </div>
+          </div>
+          <ul class="txt_wrap">
+            <input
+              type="radio"
+              name="driving_radio"
+              id="driving_radio_01"
+              checked
+            />
+            <li>
+              <label for="driving_radio_01">
+                <p3 class="driving_label">현대 카페이</p3>
+              </label>
+              <span
+                >네비게이션 화면을 통해 제휴된 가맹점에서 현금이나 실물 카드
+                없이 전용앱에 등록한 카드로 차량한에서 간편하게 결제할 수 있어
+                운전자의 일상에 편의를 더했습니다.</span
+              >
+            </li>
+            <input type="radio" name="driving_radio" id="driving_radio_02" />
+            <li>
+              <label for="driving_radio_02">
+                <p3 class="driving_label">10.25인치 풀 컬러 클러스터</p3>
+              </label>
+              <span
+                >10.25인치 고해상도 TFT LCD를 적용하여 시인성을 향상시키고,
+                대화면 클러스터를 통해 차량 및 주행정보를 차별화된 컨텐츠로
+                제공합니다. * 인포테인먼트 시스템 화면 이미지는 정기 업데이트에
+                따라 변동될 수 있습니다.</span
+              >
+            </li>
+            <input type="radio" name="driving_radio" id="driving_radio_03" />
+            <li>
+              <label for="driving_radio_03">
+                <p3 class="driving_label">음성인식 차량제어</p3>
+              </label>
+              <span
+                >스티어링 휠에 위치한 음성 인식 버튼을 통해 필요한 정보 안내는
+                물론, 공조/열선 등 차량의 다양한 기능을 제어할 수 있습니다. *
+                블루링크 가입 후 이용하실 수 있습니다.</span
+              >
+            </li>
+            <input type="radio" name="driving_radio" id="driving_radio_04" />
+            <li>
+              <label for="driving_radio_04">
+                <p3 class="driving_label">개인화 프로필</p3>
+              </label>
+              <span
+                >인포테인먼트 시스템 화면 내 사용자 선택을 하거나 디지털 키로
+                문을 여는 순간 차가 유저를 인식하여 시트포지션, 인포테인먼트
+                시스템 설정값과 공조 등 운전 환경이 유저 프로필에 맞게 자동으로
+                설정됩니다. * 개인화 프로필 기능 활용을 위해 사전에 차량과
+                디지털 키 (스마트폰) 연동 설정이 필요합니다. * 인포테인먼트
+                시스템 화면 이미지는 정기 업데이트에 따라 변동될 수 있습니다.
+              </span>
+            </li>
+            <input type="radio" name="driving_radio" id="driving_radio_05" />
+            <li>
+              <label for="driving_radio_05">
+                <p3 class="driving_label">공기 청정 시스템</p3>
+              </label>
+              <span
+                >미세먼지 센서를 통해 차량 내부의 공기질을 실시간으로
+                모니터링하며 자동 공기 정화 기능을 작동하여 쾌적한 실내 환경을
+                제공합니다.</span
+              >
+            </li>
+            <input type="radio" name="driving_radio" id="driving_radio_06" />
+            <li>
+              <label for="driving_radio_06">
+                <p3 class="driving_label">운전석 10WAY 전동시트</p3>
+              </label>
+              <span>* 럼버서포트 포함</span>
+            </li>
+            <input type="radio" name="driving_radio" id="driving_radio_07" />
+            <li>
+              <label for="driving_radio_07">
+                <p3 class="driving_label">운전석 자세 메모리시스템</p3>
+              </label>
+              <span></span>
+            </li>
+          </ul>
+        </div>
+        <div class="content_info">
+          <div class="content_info_txt_box">
+            <h1>Driving</h1>
+            <span
+              >가장 진보적인 첨단 사양들이 운전자와 교감하여 능동적인 경험을
+              제공합니다.</span
+            >
+          </div>
+        </div>
+      </div>
+
+      <div id="end">
+        <span
+          >홈페이지의 사진,사양, 컬러, 제원은 참고용이며 실제 차량과는 상이할 수
+          있습니다.</span
+        >
+        <div>
+          <p>연관메뉴 바로가기</p>
+          <div>
+            <a href="#"> 판매/시승 네트워크 검색 </a>
+            <a href="#"> 비교하기 </a>
+            <a href="#"> 구매가이드 </a>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div id="footer_wrap">
+          <div id="footer_top">
+            <h1 id="footer_logo">
+              <img src="./img/footer_img/logo_footer.webp" alt="" />
+            </h1>
+            <div id="footer_top_txt_box">
+              <ul>
+                <li><a href="">모바일 App</a></li>
+                <li><a href="">저작권안내</a></li>
+                <li>
+                  <a href="" class="txt_white">개인정보 처리방침</a>
+                </li>
+                <li><a href="">이용약관</a></li>
+              </ul>
+              <ul>
+                <li><a href="">윤리경영 사이버 감사실</a></li>
+                <li>
+                  <a href="">영상정보처리기기 운영관리방침</a>
+                </li>
+                <li><a href="">사이트맵</a></li>
+              </ul>
+              <span>고객센터 : 080-600-6000(승용), 080-200-6000(상용)</span>
+              <span
+                >COPYRIGHT ⓒ HYUNDAI MOTOR COMPANY. ALL RIGHTS RESERVED.</span
+              >
+            </div>
+            <div id="footer_top_right">
+              <div id="sns_con_wrap">
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+                <a href=""></a>
+              </div>
+              <div id="family_site_wrap">
+                <input type="checkbox" id="family_site_check" />
+                <div id="family_site_option">
+                  <a href="">현대자동차그룹</a>
+                  <a href="">제네시스닷컴</a>
+                  <a href="">캐스퍼 온라인</a>
+                  <a href="">N 브랜드</a>
+                  <a href="">글로벌경영연구소</a>
+                </div>
+                <label id="family_site" for="family_site_check">
+                  <span>Family Site</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div id="footer_under">
+            <div>
+              <img src="./img/footer_img/footer_con_01.png" alt="" />
+              <span>웹 접근성 품질인증</span>
+            </div>
+            <div>
+              <img src="./img/footer_img/footer_con_02.png" alt="" />
+              <span>우수디자인 지식경제부선정</span>
+            </div>
+            <div>
+              <img src="./img/footer_img/footer_con_03.png" alt="" />
+              <span>가족친화 우수기관</span>
+            </div>
+            <div>
+              <img src="./img/footer_img/footer_con_04.png" alt="" />
+              <span
+                >2019 한국서비스품질지수(k5-SQI) 자동차 A/S 부문 5년 연속
+                1위</span
+              >
+            </div>
+            <div>
+              <img src="./img/footer_img/footer_con_05.png" alt="" />
+              <span>2021년 한국품질만족지수 (K5-QEI) 조사 12개 부문 1위</span>
+            </div>
+            <div>
+              <img src="./img/footer_img/footer_con_06.png" alt="" />
+              <span
+                >2021년 국가고객만족도 (NCSI) 자동차기업 최초 조사대상 전부문
+                8년 연속 1위 수상 (준중형, 중형, 준대형, 대형, RV)</span
+              >
+            </div>
+            <div>
+              <img src="./img/footer_img/footer_con_07.png" alt="" />
+              <span
+                >2020년 한국산업의 고객만족도 (KCSI) 일반승용차 부문 27년 연속
+                1위 RV승용차 부문 17년 연속 1위</span
+              >
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
